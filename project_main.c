@@ -27,7 +27,7 @@ Char uartTaskStack[STACKSIZE];
 
 // JTKJ: Teht�v� 3. Tilakoneen esittely
 // JTKJ: Exercise 3. Definition of the state machine
-enum state { WAITING=1, DATA_READY };
+enum state { WAITING=1, DATA_READY=2};
 enum state programState = WAITING;
 
 // JTKJ: Teht�v� 3. Valoisuuden globaali muuttuja
@@ -70,14 +70,23 @@ Void uartTaskFxn(UArg arg0, UArg arg1) {
     UART_Handle handle;
     UART_Params params;
 
-    params.baudRate = 9600;
-    params.readMode = UART_MODE_CALLBACK; // Interrupt-based reception
+    UART_Params_init(&params);
     params.writeDataMode = UART_DATA_TEXT;
+    params.readDataMode = UART_DATA_TEXT;
+    params.readEcho = UART_ECHO_OFF;
+    params.readMode = UART_MODE_BLOCKING;
+    params.baudRate = 9600; // 9600 baud rate
+    params.dataLength = UART_LEN_8; // 8
+    params.parityType = UART_PAR_NONE; // n
+    params.stopBits = UART_STOP_ONE; // 1
+    params.readTimeout = 100000/Clock_tickPeriod;// 100ms read timeout
 
-    handle = UART_open(Board_UART, &params);
+    handle = UART_open(Board_UART0, &params);
    if (handle == NULL) {
       System_abort("Error opening the UART");
    }
+
+   char uartmsg[15];
 
     while (1) {
 
@@ -86,9 +95,10 @@ Void uartTaskFxn(UArg arg0, UArg arg1) {
         // JTKJ: Exercise 3. Print out sensor data as string to debug window if the state is correct
         //       Remember to modify state
         if (programState == DATA_READY) {
-            UART_write(handle, &ambientLight, sizeof(ambientLight));
-            System_printf("%f\n", ambientLight);
+            sprintf(uartmsg, "\n\rlux:%8.2f", ambientLight);
+            System_printf(uartmsg);
             System_flush();
+            UART_write(handle, uartmsg, sizeof(uartmsg));
             programState = WAITING;
         }
 
@@ -97,11 +107,11 @@ Void uartTaskFxn(UArg arg0, UArg arg1) {
 
 
         // Just for sanity check for exercise, you can comment this out
-        System_printf("uartTask\n");
-        System_flush();
+        //System_printf("uartTask\n");
+        //System_flush();
 
         // Once per second, you can modify this
-        Task_sleep(10000 / Clock_tickPeriod);
+        Task_sleep(250000 / Clock_tickPeriod);
     }
 }
 
@@ -139,7 +149,7 @@ Void sensorTaskFxn(UArg arg0, UArg arg1) {
     //       Laita enne funktiokutsua eteen 100ms viive (Task_sleep)
     // JTKJ: Exercise 2. Setup the OPT3001 sensor for use
     //       Before calling the setup function, insertt 100ms delay with Task_sleep
-   Task_sleep(10000 / Clock_tickPeriod);
+   Task_sleep(100000 / Clock_tickPeriod);
    opt3001_setup(&i2c);
 
     while (1) {
@@ -151,26 +161,19 @@ Void sensorTaskFxn(UArg arg0, UArg arg1) {
         //       Muista tilamuutos
         // JTKJ: Exercise 3. Save the sensor value into the global variable
         //       Remember to modify state
-        if (I2C_transfer(i2c, &i2cMessage)) {
-            ambientLight = opt3001_get_data(&i2c);
-            programState = DATA_READY;
-            System_printf("%f\n", ambientLight);
-            System_flush();
+        if (programState==WAITING) {
+            if (I2C_transfer(i2c, &i2cMessage)) {
+                ambientLight = opt3001_get_data(&i2c);
+                if (ambientLight>=0) {programState = DATA_READY;} // accept only valid readings
+            }
+            else {
+                 System_printf("I2C Bus fault\n");
+                 System_flush();
+             }
         }
-        else {
-             System_printf("I2C Bus fault\n");
-             System_flush();
-         }
-
-
-
-        // Just for sanity check for exercise, you can comment this out
-        System_printf("sensorTask\n");
-        System_flush();
-
 
         // Once per second, you can modify this
-        Task_sleep(1000000 / Clock_tickPeriod);
+        Task_sleep(100000 / Clock_tickPeriod);
     }
     //I2C_close(i2c);
 }
@@ -230,8 +233,8 @@ Int main(void) {
     }
 
     /* Sanity check */
-    System_printf("Hello world!\n");
-    System_flush();
+    //System_printf("Hello world!\n");
+    //System_flush();
 
     /* Start BIOS */
     BIOS_start();

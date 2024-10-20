@@ -171,14 +171,14 @@ wireless/comm_lib.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/produc
 wireless/comm_lib.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/interfaces/IHwi.h
 wireless/comm_lib.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h
 wireless/comm_lib.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h
-wireless/comm_lib.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/comm_lib.h
-wireless/comm_lib.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/address.h
-wireless/comm_lib.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/CWC_CC2650_154Drv.h
+wireless/comm_lib.obj: /home/linuxlite/Downloads/compsys/wireless/comm_lib.h
+wireless/comm_lib.obj: /home/linuxlite/Downloads/compsys/wireless/address.h
+wireless/comm_lib.obj: /home/linuxlite/Downloads/compsys/wireless/CWC_CC2650_154Drv.h
 wireless/comm_lib.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/rf_data_entry.h
 wireless/comm_lib.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/rf_mailbox.h
 wireless/comm_lib.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/string.h
 wireless/comm_lib.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/xlocale/_string.h
-wireless/comm_lib.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/CWC_IntegrTest.h
+wireless/comm_lib.obj: /home/linuxlite/Downloads/compsys/wireless/CWC_IntegrTest.h
 
 ../wireless/comm_lib.c:
 
@@ -522,11 +522,11 @@ wireless/comm_lib.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/comm_lib.h:
+/home/linuxlite/Downloads/compsys/wireless/comm_lib.h:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/address.h:
+/home/linuxlite/Downloads/compsys/wireless/address.h:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/CWC_CC2650_154Drv.h:
+/home/linuxlite/Downloads/compsys/wireless/CWC_CC2650_154Drv.h:
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/rf_data_entry.h:
 
@@ -536,5 +536,5 @@ wireless/comm_lib.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless
 
 /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/xlocale/_string.h:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/CWC_IntegrTest.h:
+/home/linuxlite/Downloads/compsys/wireless/CWC_IntegrTest.h:
 

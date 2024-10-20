@@ -61,14 +61,14 @@ wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_
 wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/inc/hw_rfc_dbell.h
 wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/rf_prop_cmd.h
 wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/rf_data_entry.h
-wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/CWC_CC2650_154Drv.h
+wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/Downloads/compsys/wireless/CWC_CC2650_154Drv.h
 wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/ti/xdctools_3_32_00_06_core/packages/xdc/std.h
 wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdarg.h
 wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stddef.h
 wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/targets/arm/elf/std.h
 wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/targets/arm/elf/M3.h
 wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/targets/std.h
-wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/ieee_cmd.h
+wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/Downloads/compsys/wireless/ieee_cmd.h
 
 ../wireless/CWC_CC2650_154Drv.c:
 
@@ -192,7 +192,7 @@ wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/rf_data_entry.h:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/CWC_CC2650_154Drv.h:
+/home/linuxlite/Downloads/compsys/wireless/CWC_CC2650_154Drv.h:
 
 /home/linuxlite/ti/xdctools_3_32_00_06_core/packages/xdc/std.h:
 
@@ -206,5 +206,5 @@ wireless/CWC_CC2650_154Drv.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/targets/std.h:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/ieee_cmd.h:
+/home/linuxlite/Downloads/compsys/wireless/ieee_cmd.h:
 

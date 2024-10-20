@@ -68,9 +68,7 @@ uint16_t opt3001_get_status(I2C_Handle *i2c) {
 
 #include <inttypes.h>
 
-float light(uint16_t reg);
-
-float light(uint16_t reg) {
+double light(uint16_t reg) {
     return 0.01*pow(2, reg>>12)*(reg & 0b0000111111111111);
 }
 
@@ -83,24 +81,29 @@ double opt3001_get_data(I2C_Handle *i2c) {
 
 	double lux = -1.0; // return value of the function
     // JTKJ: Find out the correct buffer sizes (n) with this sensor?
-    uint8_t txBuffer[ 1 ];
-    uint8_t rxBuffer[ 2 ];
+    uint8_t txBuffer[ 1 ];// sends one byte to device; which is the sensor address
+    uint8_t rxBuffer[ 2 ];// receives two bytes; 4 exponent bits & 12 fractional result bits
 
 	// JTKJ: Fill in the i2cMessage data structure with correct values
     //       as shown in the lecture material
     I2C_Transaction i2cMessage;
     i2cMessage.slaveAddress = Board_OPT3001_ADDR;
     txBuffer[0] = OPT3001_REG_RESULT;
-    i2cMessage.writeBuf = txBuffer;
-    i2cMessage.readBuf = rxBuffer;
+    i2cMessage.writeBuf = txBuffer; // Set transmit buffer
+    i2cMessage.writeCount = 1;      // Transmitting 1 byte
+    i2cMessage.readBuf = rxBuffer;  // Set receive buffer
+    i2cMessage.readCount = 2;       // Receiving 2 bytes
 
+    uint16_t temp_reg;
 
 	if (opt3001_get_status(i2c) & OPT3001_DATA_READY) {
 
 		if (I2C_transfer(*i2c, &i2cMessage)) {
-
+		    temp_reg = rxBuffer[0];
+		    temp_reg <<= 8;
+		    temp_reg |= rxBuffer[1];
 	        // JTKJ: Here the conversion from register value to lux
-		    lux = light(rxBuffer);
+		    lux = light(temp_reg);// max value -> 1341849.60 == {255,255}
 
 		} else {
 

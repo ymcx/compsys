@@ -1,7 +1,7 @@
 # FIXED
 
 project_main.obj: ../project_main.c
-project_main.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/sensors/opt3001.h
+project_main.obj: /home/linuxlite/Downloads/compsys/sensors/opt3001.h
 project_main.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/I2C.h
 project_main.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdint.h
 project_main.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/_ti_config.h
@@ -214,7 +214,7 @@ project_main.obj: ../CC2650STK.h
 
 ../project_main.c:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/sensors/opt3001.h:
+/home/linuxlite/Downloads/compsys/sensors/opt3001.h:
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/I2C.h:
 

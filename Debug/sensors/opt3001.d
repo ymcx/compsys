@@ -11,7 +11,7 @@ sensors/opt3001.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20
 sensors/opt3001.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/sys/_types.h
 sensors/opt3001.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/machine/_types.h
 sensors/opt3001.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/machine/_limits.h
-sensors/opt3001.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/sensors/opt3001.h
+sensors/opt3001.obj: /home/linuxlite/Downloads/compsys/sensors/opt3001.h
 sensors/opt3001.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/I2C.h
 sensors/opt3001.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdint.h
 sensors/opt3001.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/_stdint40.h
@@ -95,10 +95,10 @@ sensors/opt3001.obj: /home/linuxlite/ti/xdctools_3_32_00_06_core/packages/xdc/ru
 sensors/opt3001.obj: /home/linuxlite/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h
 sensors/opt3001.obj: /home/linuxlite/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_SupportProxy.h
 sensors/opt3001.obj: /home/linuxlite/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_Module_GateProxy.h
-sensors/opt3001.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/Board.h
+sensors/opt3001.obj: /home/linuxlite/Downloads/compsys/Board.h
 sensors/opt3001.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/Power.h
 sensors/opt3001.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/utils/List.h
-sensors/opt3001.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/CC2650STK.h
+sensors/opt3001.obj: /home/linuxlite/Downloads/compsys/CC2650STK.h
 sensors/opt3001.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/PIN.h
 sensors/opt3001.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/ioc.h
 sensors/opt3001.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/inc/hw_types.h
@@ -139,7 +139,7 @@ sensors/opt3001.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20
 
 /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/machine/_limits.h:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/sensors/opt3001.h:
+/home/linuxlite/Downloads/compsys/sensors/opt3001.h:
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/I2C.h:
 
@@ -307,13 +307,13 @@ sensors/opt3001.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20
 
 /home/linuxlite/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_Module_GateProxy.h:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/Board.h:
+/home/linuxlite/Downloads/compsys/Board.h:
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/Power.h:
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/utils/List.h:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/CC2650STK.h:
+/home/linuxlite/Downloads/compsys/CC2650STK.h:
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/PIN.h:
 

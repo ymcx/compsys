@@ -46,7 +46,7 @@ wireless/CWC_IntegrTest.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/
 wireless/CWC_IntegrTest.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/inc/hw_fcfg1.h
 wireless/CWC_IntegrTest.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/inc/hw_adi_3_refsys.h
 wireless/CWC_IntegrTest.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/inc/hw_adi.h
-wireless/CWC_IntegrTest.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/CWC_IntegrTest.h
+wireless/CWC_IntegrTest.obj: /home/linuxlite/Downloads/compsys/wireless/CWC_IntegrTest.h
 
 ../wireless/CWC_IntegrTest.c:
 
@@ -140,5 +140,5 @@ wireless/CWC_IntegrTest.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/wi
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/inc/hw_adi.h:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/wireless/CWC_IntegrTest.h:
+/home/linuxlite/Downloads/compsys/wireless/CWC_IntegrTest.h:
 

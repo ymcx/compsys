@@ -1,7 +1,7 @@
 # FIXED
 
 sensors/bmp280.obj: ../sensors/bmp280.c
-sensors/bmp280.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/sensors/bmp280.h
+sensors/bmp280.obj: /home/linuxlite/Downloads/compsys/sensors/bmp280.h
 sensors/bmp280.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/I2C.h
 sensors/bmp280.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdint.h
 sensors/bmp280.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/_ti_config.h
@@ -91,10 +91,10 @@ sensors/bmp280.obj: /home/linuxlite/ti/xdctools_3_32_00_06_core/packages/xdc/run
 sensors/bmp280.obj: /home/linuxlite/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_SupportProxy.h
 sensors/bmp280.obj: /home/linuxlite/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_Module_GateProxy.h
 sensors/bmp280.obj: /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdio.h
-sensors/bmp280.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/Board.h
+sensors/bmp280.obj: /home/linuxlite/Downloads/compsys/Board.h
 sensors/bmp280.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/Power.h
 sensors/bmp280.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/utils/List.h
-sensors/bmp280.obj: /home/linuxlite/workspace_v10/empty_CC2650STK_TI/CC2650STK.h
+sensors/bmp280.obj: /home/linuxlite/Downloads/compsys/CC2650STK.h
 sensors/bmp280.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/PIN.h
 sensors/bmp280.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/ioc.h
 sensors/bmp280.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/inc/hw_types.h
@@ -113,7 +113,7 @@ sensors/bmp280.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/
 
 ../sensors/bmp280.c:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/sensors/bmp280.h:
+/home/linuxlite/Downloads/compsys/sensors/bmp280.h:
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/I2C.h:
 
@@ -293,13 +293,13 @@ sensors/bmp280.obj: /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/
 
 /home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdio.h:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/Board.h:
+/home/linuxlite/Downloads/compsys/Board.h:
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/Power.h:
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/utils/List.h:
 
-/home/linuxlite/workspace_v10/empty_CC2650STK_TI/CC2650STK.h:
+/home/linuxlite/Downloads/compsys/CC2650STK.h:
 
 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages/ti/drivers/PIN.h:
 
